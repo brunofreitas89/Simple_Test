@@ -1,0 +1,25 @@
+stages:
+  - test
+  - build
+  - review
+  - deploy
+  
+diff-site-file-test-app:
+  stage: test
+  script:
+    - echo "Testing the app (Using an external .gitlab-ci.yml file in a different site)"
+    
+diff-site-file-build-app:
+  stage: build
+  script:
+    - echo "Building the app (Using an external .gitlab-ci.yml file in a different site)"
+    
+diff-site-file-review-app:
+  stage: review
+  script:
+    - echo "Reviewing the app (Using an external .gitlab-ci.yml file in a different site)"
+    
+diff-site-file-deploy-app:
+  stage: deploy
+  script:
+    - echo "Deploying the app (Using an external .gitlab-ci.yml file in a different site)"
